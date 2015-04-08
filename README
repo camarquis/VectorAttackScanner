@@ -11,7 +11,9 @@ More security researchers, bug hunters, exploit writers, malware developers find
 
 It is well known in the world of IT Security, that have been created countermeasures and memory protections to prevent easily create exploits and prevent programmers to write programs that execute arbitrary code, as RELRO, PAX, ASLR, PIE, NX, SSP, StackCanary and others, this tool search this flags to do the job.
 
-Now i do testing about PIE/ASLR in Android, coming soon i upload the source ...
+For now this tool only check ELF Binary Format, searching RELRO, PAX, PIE, ASLR, NX, RPATH, RUNPATH and StackCanary protections.
+
+Coming soon i upload the source ...
 
 
 This code was developed by me: Jheto Xekri
