@@ -13,7 +13,7 @@ It is well known in the world of IT Security, that have been created countermeas
 
 For now this tool only check ELF Binary Format, searching RELRO, PAX, PIE, ASLR, NX, RPATH, RUNPATH, StackCanary and FORTIFY SOURCE protections.
 
-Coming soon i upload the source ...
+Coming soon i publish this app in the Google Play with a free / pay version ...
 
 
 This code was developed by me: Jheto Xekri
