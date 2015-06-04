@@ -11,7 +11,7 @@ It is well known in the world of IT Security, that have been created countermeas
 
 For now this tool only check ELF Binary Format, searching RELRO, PAX, PIE, ASLR, NX, RPATH, RUNPATH, StackCanary and FORTIFY SOURCE protections.
 
-Coming soon i publish this app in the Google Play with a free / pay version, but I prefer to publish it as open source, for the benefit of the community, it's just that I need to raise money to pay my debts and things related to my health ...
+Coming soon i publish this app in the Google Play with a free / pay version, but I prefer to publish it as open source, for the benefit of the community, it's just that I need to raise money to pay my debts and things related to my health, If anyone can assist me with this project to move the OpenSource, his advice would be welcome ...
 
 Features about this project:
 
@@ -50,17 +50,23 @@ Features about this project:
 - Regex analyzer, where the implements this
 - How to Fix This Problem and unsecure practices
 
+<b>Preview: Vector Attack Scanner for Android:</b><br>
+[![Dissamble Part 1/2](http://img.youtube.com/vi/UMxqoevDYN4/0.jpg)](https://www.youtube.com/watch?v=UMxqoevDYN4)
+
+<b>Vector Attack Scanner: new UI:</b><br>
+[![Dissamble Part 1/2](http://img.youtube.com/vi/5aO_A3a2svw/0.jpg)](https://www.youtube.com/watch?v=5aO_A3a2svw)
+
 This code was developed by me: Jheto Xekri
 
 You can contact me in:
 
-Profile web: http://about.me/jheto.xekri
-or by Email: jheto.xekri@outlook.com
-or by Whatsapp: +573122844198
-or by Viber: +573122844198
-or by Skype: jheto.xekri
+Profile web: http://about.me/jheto.xekri<br>
+or by Email: jheto.xekri@outlook.com<br>
+or by Whatsapp: +573122844198<br>
+or by Viber: +573122844198<br>
+or by Skype: jheto.xekri<br>
 
 Donations:
 
-Coinbase: 1NzDu9iuZJPbsyQJxMFtk4YfWPMyVgNea1
+Coinbase: 1NzDu9iuZJPbsyQJxMFtk4YfWPMyVgNea1<br>
 Paypal: jheto.xekri@outlook.com
