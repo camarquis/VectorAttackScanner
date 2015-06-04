@@ -33,15 +33,17 @@ Info components:
 
 this app can be vulnerable to lock Components by ActivityManager for do malfunction of the app.
 
-The receivers NetworkStateReceiver, GcmBroadcastReceiver and InstallReceiver can be accesed by other apps to crash the app or the service.
 
-The activity MessageOneonOneConversationActivity and LogginActivity can be accesed by other apps to crash the app or the activity.
+The receivers NetworkStateReceiver, GcmBroadcastReceiver and InstallReceiver can be accesed by other apps to crash the app or the service.
+
+
+The activity MessageOneonOneConversationActivity and LogginActivity can be accesed by other apps to crash the app or the activity.
 
 The Service GCMIntentService are not exported but is not isolatedProcess, with a root exploit is very easy hack this, and other not exported activities.
 
-all class dependant of the package com.trulymadly.android are afferted by reflections and code injection.
+all class dependant of the package com.trulymadly.android are affected by reflections and code injection.
 
-This app have a very unsecure programming methods.
+This app have a very unsecure programming methods and never was developed to be secure.
 
 
 Other things: 
