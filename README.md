@@ -60,13 +60,13 @@ This code was developed by me: Jheto Xekri
 
 You can contact me in:
 
-Profile web: http://about.me/jheto.xekri
-or by Email: jheto.xekri@outlook.com
-or by Whatsapp: +573122844198
-or by Viber: +573122844198
-or by Skype: jheto.xekri
+Profile web: http://about.me/jheto.xekri<br>
+or by Email: jheto.xekri@outlook.com<br>
+or by Whatsapp: +573122844198<br>
+or by Viber: +573122844198<br>
+or by Skype: jheto.xekri<br>
 
 Donations:
 
-Coinbase: 1NzDu9iuZJPbsyQJxMFtk4YfWPMyVgNea1
+Coinbase: 1NzDu9iuZJPbsyQJxMFtk4YfWPMyVgNea1<br>
 Paypal: jheto.xekri@outlook.com
