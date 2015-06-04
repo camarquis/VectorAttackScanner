@@ -50,6 +50,12 @@ Features about this project:
 - Regex analyzer, where the implements this
 - How to Fix This Problem and unsecure practices
 
+<b>Preview: Vector Attack Scanner for Android:</b><br>
+[![Dissamble Part 1/2](http://img.youtube.com/vi/UMxqoevDYN4/0.jpg)](https://www.youtube.com/watch?v=UMxqoevDYN4)
+
+<b>Vector Attack Scanner: new UI:</b><br>
+[![Dissamble Part 1/2](http://img.youtube.com/vi/5aO_A3a2svw/0.jpg)](https://www.youtube.com/watch?v=5aO_A3a2svw)
+
 This code was developed by me: Jheto Xekri
 
 You can contact me in:
