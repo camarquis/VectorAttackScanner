@@ -1,0 +1,100 @@
+Report com.trulymadly.android Using analysis application #VectorAttackScanner
+=========================================================================================
+
+Google Play: https://play.google.com/store/apps/details?id=com.trulymadly.android.app
+Url company: http://www.trulymadly.com/
+
+Bad practices:
+
+1- you put info about the sdk in the same apk, is not good practice.
+2- the private data stored in the app can be extracted by backup adb cmd, by this reason: android:allowBackup="true"
+3- is bad bad idea uses third parties libs without check the security of this libs example okio have a custom implementation about Base64
+4- the logins are managed by socialauth, i have a problem with this, the security of this lib is good, who reviewed this ?
+5- this version of Commons IO who reviewed the security the this lib ?
+6- this version of Apache HttpComponents who reviewed to Man in the middle attacks and other attacks ?
+8- this version of gson who reviewed to stream attacks or charset attacks
+9- this version of AndroidAsync maybe can have a security problems, It is well known to security analysts, the websockets are very insecure, who reviewed this lib ?
+10- this version of ion who reviewed to Man in the middle attacks and other attacks ?
+11- this version of UrlImageViewHelper who reviewed to Man in the middle attacks and other attacks ?
+12- this version of android-async-http who reviewed to Man in the middle attacks and other attacks ?
+13- what type info collect this lib mobileapptracking, is managed securely, who reviewed this ? 
+14- The signature about this app are more incomplete "CN=Shashwat"
+
+Good practices:
+
+1- you implemented Crashlytics lib and you key is 7e69e5d02d7a3cf9786a99ac78ae92e89b66f0e4
+2- you assets dir only have a ttf fonts
+3- you app soports multi language and multiple resolutions
+4- you use Google Analytics lib and you keys are: UA-45604694, UA-45604694-3, UA-45604694-2
+5- uses in more components android.support.v7 and android.support.v4
+6- uses a google push service
+
+Info components:
+
+this app can be vulnerable to lock Components by ActivityManager for do malfunction of the app.
+
+The receivers NetworkStateReceiver, GcmBroadcastReceiver and InstallReceiver can be accesed by other apps to crash the app or the service.
+
+The activity MessageOneonOneConversationActivity and LogginActivity can be accesed by other apps to crash the app or the activity.
+
+The Service GCMIntentService are not exported but is not isolatedProcess, with a root exploit is very easy hack this, and other not exported activities.
+
+all class dependant of the package com.trulymadly.android are afferted by reflections and code injection.
+
+This app have a very unsecure programming methods.
+
+
+Other things: 
+
+1- uses a this theme style/Theme.AppCompat.Light.DarkActionBar
+2- uses Bolts-Android lib https://github.com/BoltsFramework/Bolts-Android
+3- uses okio https://github.com/square/okio
+4- uses acra https://github.com/ACRA/acra
+5- uses android-flowlayout https://github.com/ApmeM/android-flowlayout/
+6- uses socialauth https://github.com/3pillarlabs/socialauth
+7- uses Commons IO https://commons.apache.org/proper/commons-io/
+8- uses Apache HttpComponents: https://hc.apache.org/
+9- uses AdMob lib https://www.google.com/ads/admob/
+10- uses facebook sdk https://developers.facebook.com/docs/android
+11- uses gson lib https://code.google.com/p/google-gson/
+12- uses Google APIs for Android https://developers.google.com/android/reference/com/google/android/gms/common/package-summary
+12- uses SlidingMenu https://github.com/jfeinstein10/SlidingMenu
+13- uses AndroidAsync https://github.com/koush/AndroidAsync
+14- uses UrlImageViewHelper https://github.com/koush/UrlImageViewHelper
+15- uses ion https://github.com/koush/ion
+16- uses android-async-http https://github.com/loopj/android-async-http
+17- uses mobileapptracking http://www.mobileapptracking.com/
+18- uses picasso https://github.com/square/picasso
+19- uses okhttp https://github.com/square/okhttp
+20- uses AppRate https://github.com/TimotheeJeannin/AppRate
+21- uses com.trulymadly.android.analytics ??? is a custom analytics api, is secure, who reviewed this ?
+
+More: 
+
+OkHttpHandler.setCookieByName is vulnerable to clone Cookies ?
+Utility.setSharedPreferences have a problem android:allowBackup="true" in the manifest allows extract all private data from this app
+
+Conclusion:
+
+The app are developed with more net libraries, but this libs are not reviewed for attacks and injections.
+Too someone components are accesible to do crash, hijacking and possibly other stuff.
+Too have a unsecure protection for private data (Unsecure Storage).
+Despite having some good development practices, using an exploit to root, you can do virtually whatever you want.
+
+Too is vulnerable to XSS on WebViews Implemented on:
+
+com.facebook.widget.WebDialog, com.google.android.gms.internal.dd, org.brickred.socialauth.android.SocialAuthDialog, bolts.WebViewAppLinkResolver, com.google.ads.mediation.jsadapter.JavascriptAdapter
+Because to this getSettings().setJavaScriptEnabled(true); and the addJavascriptInterface implemented on bolts.WebViewAppLinkResolver
+
+com.loopj.android.http.MySSLSocketFactory, org.acra.util.NaiveTrustManager, org.brickred.socialauth.util.HttpUtil, 
+uses a SLL Pining and no verification about the certificate of this connection, check checkServerTrusted
+
+This application was never intended for it to be safe, any developer with enough knowledge can do whatever you want with this app and data users that this app stores.
+
+This is only a superficial analysis of the code, without using the accounts you are sent to me, is that there are more things to check api's and more.
+
+
+References: 
+
+Activity Hijacking: http://oasam.org/en/oasam/oasam-uir-unauthorized-intent-receipt/oasam-uir-002-activity-hijacking
+Certificate Pinning: http://oasam.org/en/oasam/oasam-crypt-cryptography/oasam-crypt-004-certificate-pinning
